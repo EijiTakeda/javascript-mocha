@@ -8,4 +8,11 @@ describe('ClosedRangeテスト', () => {
   beforeEach(() => {
     sut = new ClosedRange();
   });
+
+  describe('#isGeneratedInstance()', () => {
+    it('インスタンスが生成されていること', () => {
+      //TODO: あとで型判定いれたいな
+      assert(sut !== null);
+    });
+  });
 });
