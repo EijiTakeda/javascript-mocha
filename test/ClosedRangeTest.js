@@ -23,5 +23,9 @@ describe('ClosedRangeテスト', () => {
       rangeObj = new ClosedRange(2);
       assert(rangeObj.upperEndpoint === 2);
     });
+    it('下端点に2が設定されていること', () => {
+      rangeObj = new ClosedRange(2, 2);
+      assert(rangeObj.lowerEndpoint === 2);
+    });
   });
 });
