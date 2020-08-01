@@ -44,7 +44,7 @@ describe('ClosedRangeテスト', () => {
     });
     it('下端点に小数値が設定されないこと', () => {
       rangeObj = new ClosedRange(1.1, "hoge");
-      assert(rangeObj.upperEndpoint === undefined);
+      assert(rangeObj.lowerEndpoint === undefined);
     });
     it('上端点に小数値が設定されないこと', () => {
       rangeObj = new ClosedRange("hoge", 1.1);
@@ -57,6 +57,6 @@ describe('ClosedRangeテスト', () => {
     it('上端点より下端点が大きい閉区間を作ることはできないこと(異常系)', () => {
       rangeObj = new ClosedRange("hoge", 1);
       assert(rangeObj.lowerEndpoint === undefined && rangeObj.upperEndpoint === undefined);
-    });    
+    });
   });
 });
