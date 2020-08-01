@@ -3,16 +3,19 @@ const assert = require('assert');
 const ClosedRange = require('../lib/closedRange');
 
 describe('ClosedRangeテスト', () => {
-  let sut;
+  let rangeObj;
 
   beforeEach(() => {
-    sut = new ClosedRange();
+    rangeObj = new ClosedRange();
   });
 
   describe('#isGeneratedInstance()', () => {
     it('インスタンスが生成されていること', () => {
       //TODO: あとで型判定いれたいな
-      assert(sut !== null);
+      assert(rangeObj !== null);
+    });
+    it('下端点が設定さえていること', () => {
+        assert(rangeObj.upperEndpoint === 1);
     });
   });
 });
