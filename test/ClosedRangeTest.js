@@ -14,8 +14,13 @@ describe('ClosedRangeテスト', () => {
       //TODO: あとで型判定いれたいな
       assert(rangeObj !== null);
     });
-    it('下端点が設定さえていること', () => {
-        assert(rangeObj.upperEndpoint === 1);
+    it('上端点に1が設定されていること', () => {
+      const rangeObj1 = new ClosedRange();
+      assert(rangeObj1.upperEndpoint === 1);
+    });
+    it('上端点に2が設定されていること', () => {
+      const rangeObj2 = new ClosedRange();
+      assert(rangeObj2.upperEndpoint === 2);
     });
   });
 });
