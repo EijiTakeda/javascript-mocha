@@ -17,7 +17,7 @@ describe('Sample', () => {
 
   describe('#say()', () => {
     it('は、"Hello TDDBC!"が返ってくるべき', () => {
-      assert(sut.say() === 'Hello TDDBC');
+      assert(sut.say() === 'Hello TDDBC!');
     });
   });
 });
